@@ -16,11 +16,13 @@ public class SceneController : MonoBehaviour
 
     public void Button1WrongAnswer()
     {
-        wrongButton1.GetComponentInChildren<Text>().text = errorMsg;
+        var text = wrongButton1.GetComponentInChildren<Text>().text;
+        text = errorMsg;
     }
 
     public void Button2WrongAnswer()
     {
-
+        var text = wrongButton1.GetComponentInChildren<Text>().text;
+        text = errorMsg;
     }
 }
